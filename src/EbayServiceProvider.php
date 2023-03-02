@@ -1,6 +1,6 @@
 <?php
 
-namespace Hkonnet\LaravelEbay;
+namespace Michaelcopeland\LaravelEbay;
 
 use Illuminate\Support\ServiceProvider;
 

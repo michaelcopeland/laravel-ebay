@@ -39,31 +39,31 @@ Register the service provider by adding it to the providers key in config/app.ph
 ```php
 'providers' => [
     ...
-    Hkonnet\LaravelEbay\EbayServiceProvider::class, 
+    Michaelcopeland\LaravelEbay\EbayServiceProvider::class, 
 ],
 
 'aliases' => [
     ...
-    'Ebay' => Hkonnet\LaravelEbay\Facade\Ebay::class,
+    'Ebay' => Michaelcopeland\LaravelEbay\Facade\Ebay::class,
 ]
 ```
 **Laravel 5**
 ```php
 'providers' => [
     ...
-    'Hkonnet\LaravelEbay\EbayServiceProvider', 
+    'Michaelcopeland\LaravelEbay\EbayServiceProvider', 
 ],
 
 'aliases' => [
     ...
-    'Ebay' => 'Hkonnet\LaravelEbay\Facade\Ebay',
+    'Ebay' => 'Michaelcopeland\LaravelEbay\Facade\Ebay',
 ]
 ```
 
 Next to get started, you'll need to publish all vendor assets:
 
 ```bash
-$ php artisan vendor:publish --provider="Hkonnet\LaravelEbay\EbayServiceProvider"
+$ php artisan vendor:publish --provider="Michaelcopeland\LaravelEbay\EbayServiceProvider"
 ```
 This will create a config/ebay.php file in your app that you can modify to set your configuration.
 
@@ -108,7 +108,7 @@ Following are the two ways you can do it
 **Method 1:**
 
 ```php
-use \Hkonnet\LaravelEbay\EbayServices;
+use \Michaelcopeland\LaravelEbay\EbayServices;
 use \DTS\eBaySDK\Shopping\Types;
   
 // Create the service object.
@@ -154,7 +154,7 @@ This example will call the findItemsByKeywords operation
 
 **Method 1:**
 ```php
-use \Hkonnet\LaravelEbay\EbayServices;
+use \Michaelcopeland\LaravelEbay\EbayServices;
 use \DTS\eBaySDK\Finding\Types;
   
 // Create the service object.
@@ -230,7 +230,7 @@ use \DTS\eBaySDK\Finding\Types;
 use \DTS\eBaySDK\Constants;
 use \DTS\eBaySDK\Trading\Types;
 use \DTS\eBaySDK\Trading\Enums;
-use \Hkonnet\LaravelEbay\EbayServices;
+use \Michaelcopeland\LaravelEbay\EbayServices;
 
 /**
  * Create the service object.
@@ -305,7 +305,7 @@ do {
 ## Important Note
 Using method 1 in both examples we did
 ```php
-use \Hkonnet\LaravelEbay\EbayServices;
+use \Michaelcopeland\LaravelEbay\EbayServices;
 // Create the service object.
 $ebay_service = new EbayServices();
 $service = $ebay_service->createFinding();
