@@ -17,7 +17,7 @@
     ],
     "autoload":{
         "psr-4": {
-            "Michaelcopeland\\LaravelEbay\\": "src"
+            "Hkonnet\\LaravelEbay\\": "src"
         }
     },
     "minimum-stability": "stable"
